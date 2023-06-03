@@ -1,13 +1,9 @@
 <html>
 <head>
-
     <title>Digital Clock</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-    
 <div class="hero">
     <h1 id="h1">Digital Clock</h1>
     <div class="container">
@@ -29,19 +25,17 @@ let sec=document.getElementById("sec");
 
 setInterval(()=>{
     let currentTime=new Date();
-
 hrs.innerHTML=(currentTime.getHours()<10?"0":"")+currentTime.getHours();
 min.innerHTML=(currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
 sec.innerHTML=(currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
 },1000)
-
+    
 /*let currentTime=new Date();
-
 hrs.innerHTML=currentTime.getHours();
 min.innerHTML=currentTime.getMinutes();
 sec.innerHTML=currentTime.getSeconds();
 */
-
+    
 </script>
 
 </body>
